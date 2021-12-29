@@ -27,7 +27,7 @@ class JwtAuthenticationFilter : GatewayFilter {
             val request = exchange.request
 
 //        val apiEndpoints: List<String> = java.util.List.of("/register", "/login")
-        val apiEndpoints: List<String> =  listOf("/register", "/login")
+        val apiEndpoints: List<String> =  listOf("/signup", "/login")
 
         val isApiSecured = Predicate { r: ServerHttpRequest ->
             apiEndpoints.stream()
